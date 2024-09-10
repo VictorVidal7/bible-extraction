@@ -42,7 +42,7 @@ def guardar_json(data, file_path):
         print(f"Error al guardar el archivo {file_path}: {e}")
 
 # Ruta del archivo de texto
-archivo_texto = 'versions/rvr1960/galatas.txt'
+archivo_texto = 'versions/rvr1960/hebreos.txt'
 
 # Leer contenido del archivo
 contenido = leer_texto(archivo_texto)
@@ -52,6 +52,6 @@ if contenido:
     bible_data = procesar_contenido(contenido)
 
     # Guardar la estructura de datos en un archivo JSON
-    guardar_json(bible_data, 'versions/rvr1960/galatas.json')
+    guardar_json(bible_data, 'versions/rvr1960/hebreos.json')
 else:
     print("No se pudo leer el archivo.")
